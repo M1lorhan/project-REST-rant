@@ -3,6 +3,7 @@
 Rest-Rant is an app where users can review restaurants.
 
 | Method | Path | Purpose |
+| ------ | ---- | ------- |
 | GET | / | Home Page |
 | GET | /places | Places index page |
 | POST | /places | Create new place |
@@ -14,3 +15,11 @@ Rest-Rant is an app where users can review restaurants.
 | POST | /places/:id/rant | Create a rant (comment) about a praticular place |
 | DELETE | /places/:id/rant/:rantId | Delete a rant (comment) about a praticular place |
 | GET | * | 404 page (matches any route not defined above) |
+
+| Field | Type |
+| ----- | ---- |
+| name | string |
+| city | string |
+| state | string |
+| cuisines | string |
+| pic | string |
