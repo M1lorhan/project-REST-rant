@@ -17,16 +17,8 @@ router.get('/', (req, res) => {
     res.render('places/index', { places })
 })
 
-router.get('/', (req, res) => {
-    res.render('places/edit',)
-})
-
-router.get('/', (req, res) => {
-    res.render('places/newPage')
-})
-
-router.get('/', (req, res) => {
-    res.render('places/show')
+router.get('/new', (req, res) => {
+    res.render('places/new')
 })
 
 module.exports = router
