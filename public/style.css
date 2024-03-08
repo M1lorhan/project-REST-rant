@@ -7,3 +7,21 @@ img {
     display: block;
     margin: auto;
 }  
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.content {
+  min-height: 100%;
+}
+.content-inside {
+  padding: 20px;
+  padding-bottom: 50px;
+}
+.footer {
+  text-align: center;
+  padding: 3px;
+  background-color: lightblue;
+  height: 50px;
+  margin-top: -50px;
+}
