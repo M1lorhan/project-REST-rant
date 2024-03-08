@@ -11,6 +11,19 @@ function Def (html) {
                 <script src="https://kit.fontawesome.com/f5d4d7cd3c.js" crossorigin="anonymous"></script>
             </head>
             <body>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="/places">Places</a>
+                        </li>
+                        <li>
+                            <a href="/places/new">Add Place</a>
+                        </li>
+                    </ul>
+                </nav>
                 <div className="content">
                 <div className="content-inside">
                 {html.children}
