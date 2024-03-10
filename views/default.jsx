@@ -11,7 +11,7 @@ function Def (html) {
                 <script src="https://kit.fontawesome.com/f5d4d7cd3c.js" crossorigin="anonymous"></script>
             </head>
             <body>
-                <nav>
+                <nav className = "navbar navbar-dark bg-primary">
                     <ul>
                         <li>
                             <a href="/">Home</a>
