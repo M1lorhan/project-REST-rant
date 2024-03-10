@@ -30,10 +30,7 @@ body {
   background-color: lightblue;
   text-align: center;
 }
-nav {
-  background-color: cornflowerblue;
-  padding: 10px;
-}
+
 nav ul {
   list-style-type: none;
   margin: 0;
