@@ -1,11 +1,17 @@
 h1 {
-    text-align: center;
-    color: cornflowerblue;
+  text-align: center;
+  color: cornflowerblue;
   }
+h2 {
+  color: lightblue
+}
+p {
+  font-weight: bold;
+}
 img {
-    width: 50%;
-    display: block;
-    margin: auto;
+  width: 50%;
+  display: block;
+  margin: auto;
 }  
 html, body {
   height: 100%;
@@ -55,3 +61,4 @@ main {
   margin-left: 20px;
   background-color: white;
 }
+

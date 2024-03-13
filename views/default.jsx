@@ -31,8 +31,8 @@ function Def (html) {
                 </div>
             </body>
             <footer className="footer">
-                <div>REST-Rant</div>
-            <i class="fa-brands fa-x-twitter"></i>
+                <div>REST-Rant <i class="fa-regular fa-copyright"></i> Marshall Lorhan</div>
+            <i class="fa-brands fa-x-twitter"></i> 
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-linkedin"></i>

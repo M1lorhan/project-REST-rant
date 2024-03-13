@@ -76,12 +76,13 @@ function new_form () {
 	                        <option value="WV">West Virginia</option>
 	                        <option value="WI">Wisconsin</option>
 	                        <option value="WY">Wyoming</option>
+							<option value="USA">USA</option>
                     </select>
                     </div>
 					</div>
                     <div className="form-group">
-                        <label htmlFor="cuisine">Place Cuisine</label>
-                        <input className="form-control" id="cuisine" name="cuisine" required/>
+                        <label htmlFor="cuisines">Place Cuisine</label>
+                        <input className="form-control" id="cuisines" name="cuisines" required/>
                     </div>
                     <input className="btn btn-primary" type="submit" value="Add Place" />
                 </form>

@@ -5,8 +5,8 @@ function edit_form (data) {
     return (
         <Def>
             <main>
-                <h1>Edit Page</h1>
-                <form method="POST" action={`/places/${data.place.id}?_method=PUT`}>
+                <h1>Edit Place</h1>
+                <form action={`/places/${data.id}?_method=PUT`} method="POST">
                     <div className="row">
                     <div className="form-group col-sm-6">
                         <label htmlFor="name">Place Name</label>
@@ -14,17 +14,16 @@ function edit_form (data) {
                             className="form-control"
                             id="name"
                             name="name"
-                            value={data.place.name}
+                            value={ data.place.name }
                             required />
                     </div>
                     <div className="form-group col-sm-6">
                         <label htmlFor="pic">Place Picture</label>
                         <input
                             className="form-control"
-                            type="url"
                             id="pic"
                             name="pic"
-                            value={data.place.pic} />
+                            value={ data.place.pic } />
                     </div>
                     </div>
                     <div className="row">
@@ -34,12 +33,11 @@ function edit_form (data) {
                             className="form-control"
                             id="city"
                             name="city"
-                            value={data.place.city} />
+                            value={ data.place.city } />
                     </div>
                     <div className="form-group col-sm-6">
                         <div htmlFor="state">Place State</div>
-                            <select
-                            value={data.place.state}>
+                            <select value={data.place.state}>
                             <option value="AL">Alabama</option>
 	                        <option value="AK">Alaska</option>
 	                        <option value="AZ">Arizona</option>
@@ -91,19 +89,20 @@ function edit_form (data) {
 	                        <option value="WV">West Virginia</option>
 	                        <option value="WI">Wisconsin</option>
 	                        <option value="WY">Wyoming</option>
+                            <option value="USA">USA</option>
                     </select>
                     </div>
                     </div>
                     <div className="form-group">
-                        <label htmlFor="cuisine">Place Cuisine</label>
+                        <label htmlFor="cuisines">Place Cuisine</label>
                         <input
                             className="form-control"
-                            id="cuisine"
-                            name="cuisine"
-                            value={data.place.cuisines}
-                            required/>
+                            id="cuisines"
+                            name="cuisines"
+                            value={ data.place.cuisines }
+                            required />
                     </div>
-                    <input className="btn btn-primary" type="submit" value="Add Place" />
+                    <input className="btn btn-primary" type="submit" value="Edit Place"/>
                 </form>
             </main>
         </Def>
