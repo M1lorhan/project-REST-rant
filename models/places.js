@@ -5,7 +5,10 @@ const placeSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    pic: String,
+    pic: {
+        type: String,
+        default: '../images/bonnie-meisels-Y5uyOoct2pg-unsplash.jpg',
+    },
     cuisines: {
         type: String,
         required: true
@@ -18,7 +21,11 @@ const placeSchema = new mongoose.Schema({
         type: String,
         default: 'USA'
     },
-    founded: Number
+    founded: {
+        type: Number,
+        min: [1672, 'Are you the oldest resturant in the US!?!?'],
+        max: [new Date().getFullYear(), 'You are opening in the future!?!?']
+    }
 })
 
 placeSchema.methods.showEstablished = function() {
