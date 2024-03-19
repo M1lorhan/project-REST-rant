@@ -49,16 +49,36 @@ router.get('/:id', (req, res) =>{
 }) 
 
 router.put('/:id', (req, res) => {
-    res.send('PUT /places/:id stub')
+    let id = Number(req.params.id)
+    if (isNaN(id)) {
+        res.render('error404')
+    }
+    else if (!places[id]) {
+        res.render('error404')
+    }
+    else {
+        if (!req.body.pic) {
+            req.body.pic = 'https://placekitten.com/400/400'
+        }
+        if (!req.body.city) {
+            req.body.city = 'Anytown'
+        }
+        if (!req.body.state) {
+            req.body.state = "USA"
+        }
+        places[id] = req.body
+        res.redirect(`/places/${id}`)
+    } 
 })
 
-router.delete('/:id', (req, res) =>{
+router.delete('/:id', async (req,res) => {
     res.send('DELETE /places/:id stub')
 })
 
 router.get('/:id/edit', (req, res) => {
     res.send('GET edit form stub')
 })
+
 
 router.post('/:id/rant', (req, res) =>{
     res.send('GET /places/:id/rant stub')

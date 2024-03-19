@@ -25,7 +25,8 @@ const placeSchema = new mongoose.Schema({
         type: Number,
         min: [1672, 'Are you the oldest resturant in the US!?!?'],
         max: [new Date().getFullYear(), 'You are opening in the future!?!?']
-    }
+    },
+    comments: [{type: mongoose.Schema.Types.ObjectId, ref: 'Comment'}]
 })
 
 placeSchema.methods.showEstablished = function() {
